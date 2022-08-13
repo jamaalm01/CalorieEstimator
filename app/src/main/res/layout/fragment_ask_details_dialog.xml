@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AskDetailsActivityDialogFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Proj Name :"
+        android:id="@+id/textView_projname"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView_platesNo"
+        android:layout_below="@+id/textView_projname"
+        android:layout_alignLeft="@+id/textView_projname"
+        android:layout_alignStart="@+id/textView_projname"
+        android:layout_marginTop="40dp"
+        android:text="No. of Plates * :" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Plate size * :"
+        android:id="@+id/textView_platesize"
+        android:layout_below="@+id/textView_platesNo"
+        android:layout_alignLeft="@+id/textView_platesNo"
+        android:layout_alignStart="@+id/textView_platesNo"
+        android:layout_marginTop="40dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_platesize"
+        android:textSize="8pt"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/textView_platesize"
+        android:layout_alignLeft="@+id/spinner_plateno"
+        android:layout_alignStart="@+id/spinner_plateno"
+        android:layout_above="@+id/button_dismiss" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_projname"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:layout_alignTop="@+id/textView_projname"
+        android:layout_toRightOf="@+id/textView_platesNo"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner_plateno"
+        android:textSize="8pt"
+        android:layout_alignTop="@+id/textView_platesNo"
+        android:layout_alignLeft="@+id/editText_projname"
+        android:layout_alignStart="@+id/editText_projname"
+        android:spinnerMode="dropdown"
+        android:layout_alignBottom="@+id/textView_platesNo" />
+    <Button
+        android:id="@+id/button_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dismiss"
+        android:layout_marginTop="41dp"
+        android:layout_below="@+id/textView_platesize"
+        android:layout_alignLeft="@+id/textView_platesize"
+        android:layout_alignStart="@+id/textView_platesize"
+        android:layout_alignRight="@+id/textView_projname"
+        android:layout_alignEnd="@+id/textView_projname" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONE"
+        android:id="@+id/button_done"
+        android:layout_alignTop="@+id/button_dismiss"
+        android:layout_toRightOf="@+id/textView_platesNo"
+        android:layout_toEndOf="@+id/textView_platesNo" />
+
+</RelativeLayout>
