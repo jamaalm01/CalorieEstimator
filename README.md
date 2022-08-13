@@ -7,4 +7,3 @@ The user is generally expected to take top view photos of the food items. Each c
 It has the ability to store the processed output data (resultant food names and the estimated calories) of the project locally in the phone which can be viewed anytime. 
 When a project is initiated it sends the project related data to a remote server and receives the result data back from the server after processing.
 
-In a new version of the app (not updated in github yet) the ML task takes place in the phone itself, which is done with the help of android tensorflow
